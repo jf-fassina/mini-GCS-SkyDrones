@@ -14,16 +14,16 @@ class EstacaoDeControle;
 /// EstacaoDeControle::exibir_painel.
 class Console {
 public:
-    explicit Console(EstacaoDeControle& estacao);
+  explicit Console(EstacaoDeControle& estacao);
 
-    /// Bloqueia até o usuário digitar `sair` (ou fechar a entrada com Ctrl+D).
-    void executar();
+  /// Bloqueia até o usuário digitar `sair` (ou fechar a entrada com Ctrl+D).
+  void executar();
 
 private:
-    void mostrar_abertura() const;
-    void tratar(const std::string& linha);
+  void mostrar_abertura() const;
+  void tratar(const std::string& linha);
 
-    EstacaoDeControle& estacao_;
+  EstacaoDeControle& estacao_;
 };
 
-}  // namespace gcs
+} // namespace gcs

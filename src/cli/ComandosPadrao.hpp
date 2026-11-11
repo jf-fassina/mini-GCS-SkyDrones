@@ -12,4 +12,4 @@ namespace gcs {
 /// ComandosPadrao.cpp; copie uma delas como modelo.
 RegistroDeComandos comandos_padrao();
 
-}  // namespace gcs
+} // namespace gcs
